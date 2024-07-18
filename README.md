@@ -1,4 +1,4 @@
-<b>This Integration allows you to update your agents timesheets with attendance events captured by the terminal solution "TimeMoto".</b>
+<b>This Integration allows you to update your agents timesheets with attendance events captured by the terminal solution "TimeMoto"</b>
 <br><br>
 <img width="1565" alt="Bildschirmfoto 2024-07-18 um 19 32 42" src="https://github.com/user-attachments/assets/921d9c5b-8b04-4c30-8f27-8bbe815d802f">
 <br><br>
