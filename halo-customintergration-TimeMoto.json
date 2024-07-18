@@ -1,0 +1,1009 @@
+{
+  "id": null,
+  "guid": null,
+  "name": "HaloPSA Internal",
+  "module_id": 0,
+  "authorizationtype": 4,
+  "granttype": 0,
+  "client_id": "YOURCLIENTID",
+  "username": "",
+  "tokenurl": "https://yourcompany.halopsa.com/auth/token?tenant=jemix",
+  "scope": "all",
+  "headerprefix": "",
+  "algorithm": 0,
+  "bearername": "Bearer",
+  "bearerlocation": 0,
+  "resourcebaseurl": "https://yourcompany.halopsa.com/api",
+  "certificate_name": "",
+  "major_version_number": 0,
+  "minor_version_number": 0,
+  "patch_version_number": 0,
+  "version_number": "0.0.0",
+  "authorized": false,
+  "methods": [
+    {
+      "id": null,
+      "guid": null,
+      "integration_id": null,
+      "integration_name": null,
+      "integration_baseurl": "https://yourcompany.halopsa.com/api",
+      "name": "GetAgentByName",
+      "full_name": null,
+      "resource": "https://yourcompany.halopsa.com/api",
+      "path": "/Agent",
+      "method": 0,
+      "authorizationtype": -1,
+      "requesttype": 0,
+      "responsetype": 0,
+      "log_retention_policy_days": 30,
+      "uri_params": [
+        {
+          "id": 175,
+          "method_id": 23,
+          "type": 0,
+          "key": "search",
+          "value": "<<AgentName>>",
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 176,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 177,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 178,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 179,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 180,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 181,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 182,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 183,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 184,
+          "method_id": 23,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "headers": [],
+      "body_mappings": [],
+      "output_variables": [
+        {
+          "id": 185,
+          "method_id": 23,
+          "type": 3,
+          "data_type": 3,
+          "key": "AgentID",
+          "value": "response[0]^id",
+          "value_mappings": [],
+          "extra_process": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "guid": null,
+      "integration_id": null,
+      "integration_name": null,
+      "integration_baseurl": "https://yourcompany.halopsa.com/api",
+      "name": "BookWorkStart",
+      "full_name": null,
+      "resource": "https://yourcompany.halopsa.com/api",
+      "path": "/Timesheet?utcoffset=-120",
+      "method": 1,
+      "authorizationtype": -1,
+      "requesttype": 1,
+      "responsetype": 0,
+      "requestbody": "[\n{\n  \"agent_id\" : <<AgentID>>,  \n  \"date\": \"<<DateOnly>>\",\n  \"start_time\": \"<<TimeBooked>>+02:00\"\n}\n]",
+      "log_retention_policy_days": 30,
+      "uri_params": [
+        {
+          "id": 186,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 187,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 188,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 189,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 190,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 191,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 192,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 193,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 194,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 195,
+          "method_id": 24,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "headers": [],
+      "body_mappings": [
+        {
+          "id": 196,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 197,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 198,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 199,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 200,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 201,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 202,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 203,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 204,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 205,
+          "method_id": 24,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "output_variables": []
+    },
+    {
+      "id": null,
+      "guid": null,
+      "integration_id": null,
+      "integration_name": null,
+      "integration_baseurl": "https://yourcompany.halopsa.com/api",
+      "name": "Generate Date from DateTime",
+      "full_name": null,
+      "resource": "https://yourcompany.halopsa.com/api",
+      "path": "/Report",
+      "method": 1,
+      "authorizationtype": -1,
+      "requesttype": 1,
+      "responsetype": 0,
+      "requestbody": "[\n    {\n        \"sql\" : \"SELECT DATEADD(dd, 0, DATEDIFF(dd, 0, CDTimeStamp)) as CurrentDate from (VALUES('<<TimeBooked>>')) t1 (CDTimeStamp)\",\n        \"name\" : \"Homeless Report\",\n        \"_loadreportonly\": \"True\"\n    }\n]",
+      "log_retention_policy_days": 30,
+      "uri_params": [
+        {
+          "id": 206,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 207,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 208,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 209,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 210,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 211,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 212,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 213,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 214,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 215,
+          "method_id": 25,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "headers": [],
+      "body_mappings": [
+        {
+          "id": 216,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 217,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 218,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 219,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 220,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 221,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 222,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 223,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 224,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 225,
+          "method_id": 25,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "output_variables": [
+        {
+          "id": 226,
+          "method_id": 25,
+          "type": 3,
+          "data_type": 6,
+          "key": "DateOnly",
+          "value": "response^report^rows[0]^CurrentDate!",
+          "value_mappings": [],
+          "extra_process": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "guid": null,
+      "integration_id": null,
+      "integration_name": null,
+      "integration_baseurl": "https://yourcompany.halopsa.com/api",
+      "name": "BookWorkEnd",
+      "full_name": null,
+      "resource": "https://yourcompany.halopsa.com/api",
+      "path": "/Timesheet?utcoffset=-120",
+      "method": 1,
+      "authorizationtype": -1,
+      "requesttype": 1,
+      "responsetype": 0,
+      "requestbody": "[\n{\n  \"agent_id\" : <<AgentID>>,  \n  \"date\": \"<<DateOnly>>\",\n  \"end_time\": \"<<TimeBooked>>+02:00\"\n}\n]",
+      "log_retention_policy_days": 30,
+      "uri_params": [
+        {
+          "id": 227,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 228,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 229,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 230,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 231,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 232,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 233,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 234,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 235,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 236,
+          "method_id": 26,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "headers": [],
+      "body_mappings": [],
+      "output_variables": []
+    },
+    {
+      "id": null,
+      "guid": null,
+      "integration_id": null,
+      "integration_name": null,
+      "integration_baseurl": "https://yourcompany.halopsa.com/api",
+      "name": "BookBreakStart",
+      "full_name": null,
+      "resource": "https://yourcompany.halopsa.com/api",
+      "path": "/TimeSheetEvent",
+      "method": 1,
+      "authorizationtype": -1,
+      "requesttype": 1,
+      "responsetype": 0,
+      "requestbody": "[\n{\n    \"event_type\": 2,\n    \"subject\": \"Break\",\n    \"start_date\": \"<<TimeBooked>>+02:00\",\n    \"agent_id\": <<AgentID>>\n}\n]",
+      "log_retention_policy_days": 30,
+      "uri_params": [
+        {
+          "id": 237,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 238,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 239,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 240,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 241,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 242,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 243,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 244,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 245,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 246,
+          "method_id": 27,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "headers": [],
+      "body_mappings": [
+        {
+          "id": 247,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 248,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 249,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 250,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 251,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 252,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 253,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 254,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 255,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 256,
+          "method_id": 27,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "output_variables": [
+        {
+          "id": 257,
+          "method_id": 27,
+          "type": 3,
+          "data_type": 3,
+          "key": "BreakID",
+          "value": "response^id!",
+          "value_mappings": [],
+          "extra_process": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "guid": null,
+      "integration_id": null,
+      "integration_name": null,
+      "integration_baseurl": "https://yourcompany.halopsa.com/api",
+      "name": "GetAgentsBreaks",
+      "full_name": null,
+      "resource": "https://yourcompany.halopsa.com/api",
+      "path": "/TimesheetEvent",
+      "method": 0,
+      "authorizationtype": -1,
+      "requesttype": 0,
+      "responsetype": 0,
+      "log_retention_policy_days": 30,
+      "uri_params": [
+        {
+          "id": 258,
+          "method_id": 28,
+          "type": 0,
+          "key": "agent_id",
+          "value": "<<AgentID>>",
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 259,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 260,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 261,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 262,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 263,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 264,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 265,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 266,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 267,
+          "method_id": 28,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "headers": [],
+      "body_mappings": [],
+      "output_variables": [
+        {
+          "id": 268,
+          "method_id": 28,
+          "type": 3,
+          "data_type": 1,
+          "key": "AllBreaks",
+          "value": "response",
+          "description": "Returns the entire set of Breaks for the given agent",
+          "value_mappings": [],
+          "extra_process": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ]
+    },
+    {
+      "id": null,
+      "guid": null,
+      "integration_id": null,
+      "integration_name": null,
+      "integration_baseurl": "https://yourcompany.halopsa.com/api",
+      "name": "BookBreakEnd",
+      "full_name": null,
+      "resource": "https://yourcompany.halopsa.com/api",
+      "path": "/TimeSheetEvent",
+      "method": 1,
+      "authorizationtype": -1,
+      "requesttype": 1,
+      "responsetype": 0,
+      "requestbody": "[\n  {\n    \"id\": <<CurrentEventID>>,\n    \"event_type\": 1,\n    \"subject\": \"Break\",\n    \"end_date\": \"<<TimeBooked>>+02:00\",\n    \"agent_id\": <<AgentID>>,\n    \"break_type\": 1,\n    \"lognewticket\": false\n}\n]",
+      "log_retention_policy_days": 30,
+      "uri_params": [
+        {
+          "id": 269,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 270,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 271,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 272,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 273,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 274,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 275,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 276,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 277,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 278,
+          "method_id": 29,
+          "type": 0,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "headers": [],
+      "body_mappings": [
+        {
+          "id": 279,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 280,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 281,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 282,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 283,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 284,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 285,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 286,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 287,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        },
+        {
+          "id": 288,
+          "method_id": 29,
+          "type": 2,
+          "step_id": 0,
+          "step_name": ""
+        }
+      ],
+      "output_variables": []
+    }
+  ],
+  "access_control": null
+}
